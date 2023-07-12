@@ -1,0 +1,105 @@
+/* importación de la fuente */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+
+/* variables css */
+
+:root{
+  --Bright-Red: hsl(12, 88%, 59%);
+  --Dark-Blue: hsl(228, 39%, 23%);
+
+  --Dark-Grayish-Blue: hsl(227, 12%, 61%);
+  --Very-Dark-Blue: hsl(233, 12%, 13%);
+  --Very-Pale-Red: hsl(13, 100%, 96%);
+  --Vary-Light-Gray: hsl(0, 0%, 98%);
+}
+/* reset css */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+body{
+  padding: 0rem 8rem;
+}
+/* breakpoints */
+/* - Mobile: 375px
+- Desktop: 1440px */
+
+/* header styles */
+.header{}
+.nav{
+  margin: 2rem 0;
+}
+.nav__ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+.nav__ul__li{
+  list-style: none;
+}
+
+
+.nav__ul__ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ul__ul__li{
+  list-style: none;
+  margin: 0 1rem;
+}
+
+.ul__li__a{
+  text-decoration: none;
+}
+
+.ul__li__a:hover{
+  color : var(--Dark-Grayish-Blue);
+}
+
+.getStarted{
+  background-color: var(--Bright-Red);
+  color: var(--Vary-Light-Gray);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  text-decoration: none;
+}
+
+.getStarted:hover{
+  box-shadow: 0px 4px 10px var(--Bright-Red);
+  color: var(--Vary-Light-Gray);
+}
+
+/* main styles */
+.main{
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 0;
+}
+.section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section__article{
+  width: 40%;
+}
+.section__article__h1{
+  font-size: 4rem;
+  color: var(--Dark-Blue);
+  margin-bottom: 2rem ;
+ }
+.section__article__p{
+  color: var(--Dark-Grayish-Blue);
+  margin-bottom: 3rem;
+  width: 60%;
+  line-height: 2rem;
+}
+
